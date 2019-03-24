@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bold;
+}
+
+header {
+    margin-left: 300px;
+    margin-right: 400px;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Uncial Antiqua', cursive;
+    background-image: url("../Images/wood_texture.jpg");
+    display: inline;
+    text-align: center !important;
+    border-radius: 10px;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#target-number {
+    text-align: center;
+}
+
+#target-field {
+    text-align: center;
+    background-image: url("../Images/number_texture.jpg");
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+#total-field {
+    text-align: center;
+    background-image: url("../Images/space_texture.jpg");
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+#win-number {
+    text-align: center;
+}
+
+#loss-number {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-image: url("../Images/wood_texture.jpg");
+    border-radius: 5px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#score-field {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
