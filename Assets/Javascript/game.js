@@ -1,4 +1,3 @@
-
 // Score variables
 var wins = 0;
 var losses = 0;
@@ -13,17 +12,13 @@ var purpleCrystal = $("purple_crystal.png");
 var min = 19;
 var max = 120;
 var targetNumber = getRandomInt(min, max)
+$("#target-number").html(targetNumber);
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
-$("#target-number").html(targetNumber);
-
-
-// Target number field
-
 
 // Crystal variables
 var crystalNumber = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
@@ -33,6 +28,23 @@ var crystalChoicePink = crystalNumber[Math.floor(Math.random() * crystalNumber.l
 var crystalChoicePurple = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
 
 // Crystal Array
+$("img").on("click", function() {
+    var myClass = $(this).attr("id")
+    if (myClass === "blue-crystal") {
+        alert("blue-crystal test")
+    }
+    if (myClass === "orange-crystal") {
+        alert("orange-crystal test")
+    }
+    if (myClass === "pink-crystal") {
+        alert("pink-crystal test")
+    }
+    if (myClass === "purple-crystal") {
+        alert("purple-crystal test")
+    }
+})
+
+
 $(".blue-crystal").on("click", function () {
     var blueCrystal = crystalChoiceBlue;
     blueCrystal = parseInt(blueCrystal);
