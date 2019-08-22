@@ -27,6 +27,11 @@ var crystalChoiceOrange = crystalNumber[Math.floor(Math.random() * crystalNumber
 var crystalChoicePink = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
 var crystalChoicePurple = crystalNumber[Math.floor(Math.random() * crystalNumber.length)];
 
+console.log(crystalChoiceBlue)
+console.log(crystalChoiceOrange)
+console.log(crystalChoicePink)
+console.log(crystalChoicePurple)
+
 // Crystal Array
 $("img").on("click", function () {
     var myClass = $(this).attr("id")
@@ -54,7 +59,7 @@ $("img").on("click", function () {
         scoreTotal += purpleCrystal;
         $("#score-number").html(scoreTotal);
     }
-    if (scoreTotal >= targetNumber) {
+    if (scoreTotal > targetNumber) {
         losses++;
         $("#loss-number").html(losses);
         reset();
@@ -62,76 +67,9 @@ $("img").on("click", function () {
         console.log(targetNumber);
         $("#target-number").html(targetNumber);
     }
-})
-
-
-$(".blue-crystal").on("click", function () {
-
-
     if (scoreTotal === targetNumber) {
         wins++;
         $("#win-number").html(wins);
-        reset();
-        targetNumber = getRandomInt(min, max);
-        console.log(targetNumber);
-        $("#target-number").html(targetNumber);
-    }
-    
-})
-$(".orange-crystal").on("click", function () {
-
-
-    if (scoreTotal === targetNumber) {
-        wins++;
-        $("#win-number").html(wins);
-        reset();
-        targetNumber = getRandomInt(min, max);
-        console.log(targetNumber);
-        $("#target-number").html(targetNumber);
-    }
-    if (scoreTotal >= targetNumber) {
-        losses++;
-        $("#loss-number").html(losses);
-        reset();
-        targetNumber = getRandomInt(min, max);
-        console.log(targetNumber);
-        $("#target-number").html(targetNumber);
-    }
-})
-$(".pink-crystal").on("click", function () {
-
-
-    if (scoreTotal === targetNumber) {
-        wins++;
-        $("#win-number").html(wins);
-        reset();
-        targetNumber = getRandomInt(min, max);
-        console.log(targetNumber);
-        $("#target-number").html(targetNumber);
-    }
-    if (scoreTotal >= targetNumber) {
-        losses++;
-        $("#loss-number").html(losses);
-        reset();
-        targetNumber = getRandomInt(min, max);
-        console.log(targetNumber);
-        $("#target-number").html(targetNumber);
-    }
-})
-$(".purple-crystal").on("click", function () {
-
-
-    if (scoreTotal === targetNumber) {
-        wins++;
-        $("#win-number").html(wins);
-        reset();
-        targetNumber = getRandomInt(min, max);
-        console.log(targetNumber);
-        $("#target-number").html(targetNumber);
-    }
-    if (scoreTotal >= targetNumber) {
-        losses++;
-        $("#loss-number").html(losses);
         reset();
         targetNumber = getRandomInt(min, max);
         console.log(targetNumber);
