@@ -54,6 +54,14 @@ $("img").on("click", function () {
         scoreTotal += purpleCrystal;
         $("#score-number").html(scoreTotal);
     }
+    if (scoreTotal >= targetNumber) {
+        losses++;
+        $("#loss-number").html(losses);
+        reset();
+        targetNumber = getRandomInt(min, max);
+        console.log(targetNumber);
+        $("#target-number").html(targetNumber);
+    }
 })
 
 
@@ -68,14 +76,7 @@ $(".blue-crystal").on("click", function () {
         console.log(targetNumber);
         $("#target-number").html(targetNumber);
     }
-    if (scoreTotal >= targetNumber) {
-        losses++;
-        $("#loss-number").html(losses);
-        reset();
-        targetNumber = getRandomInt(min, max);
-        console.log(targetNumber);
-        $("#target-number").html(targetNumber);
-    }
+    
 })
 $(".orange-crystal").on("click", function () {
 
