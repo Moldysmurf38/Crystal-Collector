@@ -6,7 +6,7 @@ A game where the player tries to get an exact match for the target number with t
 
 ### **Getting Started:**
 
-Check out the Gitpages deployed version here: https://moldysmurf38.github.io/Unit-4-Game/
+Check out the Gitpages deployed version here: https://moldysmurf38.github.io/Crystal-Collector/
 
 ### **How to Use:**
 
