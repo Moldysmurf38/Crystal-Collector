@@ -9,10 +9,6 @@ h1 {
     color: white;
     font-family: 'Uncial Antiqua', cursive;
     background-image: url("../Images/wood_texture.jpg");
-    display: inline;
-    text-align: center !important;
-    border-radius: 10px;
-    margin-left: 20%;
 }
 
 .container {
