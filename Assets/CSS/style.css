@@ -4,11 +4,6 @@ body {
     font-weight: bold;
 }
 
-header {
-    margin-left: 300px;
-    margin-right: 400px;
-}
-
 h1 {
     font-size: 60px;
     color: white;
@@ -17,6 +12,7 @@ h1 {
     display: inline;
     text-align: center !important;
     border-radius: 10px;
+    margin-left: 20%;
 }
 
 .container {

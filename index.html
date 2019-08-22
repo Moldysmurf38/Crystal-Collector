@@ -14,21 +14,26 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="col-md-12">Crystal Collector</h1>
-    </header>
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <h1 class="col-md-12">Crystal Collector</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
                 <h4>How to play:</h4>
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By click on a crystal you will add a sepcific amount of points to your
-                    total score.</p>
-                <p>You win the game by matching your total score to random number.</p>
-                <p>You lose the game, if your total score goes above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the gems will change the values of each crystal.</p>
+                <ul>
+                    <li>The target number will be randomly generated each round.</li>
+                    <li>There are four crystals below.</li>
+                    <li>By click on a crystal, you will add a sepcific amount of points to your
+                            total score.</li>
+                    <li>You win the round by matching your total score to the target number value.</li>
+                    <li>You lose the round, if your total score goes above the random number.</li>
+                    <li>The value of each crystal is hidden from you until you click on it.</li>
+                    <li>At the beginning of every new round, each crystal gets a new value.</li>
+                </ul>
             </div>
         </div>
         <br>
@@ -43,7 +48,7 @@
             <div class="col-md-5" id="target-field">
                 <p>Target Number:</p>
                 <p id="target-number"></p>
-                <p>Your total score is:</p>
+                <p>Your Total Score:</p>
                 <p id="score-number">0</p>
             </div>
         </div>
