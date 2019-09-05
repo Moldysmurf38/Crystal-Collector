@@ -30,7 +30,8 @@ Game mode variants <br/>
 
 JQuery: https://jquery.com/ <br/>
 Bootstrap: https://getbootstrap.com/<br/>
-background image: https://unsplash.com/@thehmstravels
+background image: https://unsplash.com/@thehmstravels <br/>
+rock images: https://unsplash.com/@briantagalog and https://unsplash.com/@dynamicwang
 
 ### **Author(s):**
 
