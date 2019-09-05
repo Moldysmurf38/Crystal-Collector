@@ -2,15 +2,23 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=MedievalSharp|Uncial+Antiqua" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp|Uncial+Antiqua" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/reset.css">
 </head>
 
 <body>
@@ -23,17 +31,31 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                <h4>How to play:</h4>
-                <ul>
-                    <li>The target number will be randomly generated each round.</li>
-                    <li>There are four crystals below.</li>
-                    <li>By clicking on a crystal, you will add a sepcific amount of points to your
-                            total score.</li>
-                    <li>You win the round by matching your total score to the target number value.</li>
-                    <li>You lose the round, if your total score goes above the random number.</li>
-                    <li>The value of each crystal is hidden from you until you click on it.</li>
-                    <li>At the beginning of every new round, each crystal gets a new value.</li>
-                </ul>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How to Play:
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ol>
+                                    <li>The target number will be randomly generated each round.</li>
+                                    <li>You win the round by matching your total score to the target number value.</li>
+                                    <li>By clicking on a crystal, you will add a sepcific amount of points to your
+                                        total score.</li>
+                                    <li>You lose the round, if your total score goes above the random number.</li>
+                                    <li>At the beginning of every new round, each crystal gets a new value.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
@@ -54,13 +76,13 @@
         <br>
         <h2>Crystals</h2>
         <div class="d-flex row justify-content-center">
-                <img class="p-1 crystal-shard" id="blue-crystal" src="Assets/Images/blue_crystal.png">
-                <img class="p-1 crystal-shard" id="orange-crystal" src="Assets/Images/orange_crystal.png">
-                <img class="p-1 crystal-shard" id="pink-crystal" src="Assets/Images/pink_crystal.png">
-                <img class="p-1 crystal-shard" id="purple-crystal" src="Assets/Images/purple_crystal.png">
-            </div>
+            <img class="p-1 crystal-shard" id="blue-crystal" src="Assets/Images/blue_crystal.png">
+            <img class="p-1 crystal-shard" id="orange-crystal" src="Assets/Images/orange_crystal.png">
+            <img class="p-1 crystal-shard" id="pink-crystal" src="Assets/Images/pink_crystal.png">
+            <img class="p-1 crystal-shard" id="purple-crystal" src="Assets/Images/purple_crystal.png">
         </div>
-        <br>
+    </div>
+    <br>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>

@@ -22,14 +22,15 @@ If you wish to use the files locally, clone the repository's master branch onto 
 
 ### **Future Features:**
 
-Polished UI
-Possible crystal animations
-Game mode variants
+Polished UI <br/>
+Possible crystal animations <br/>
+Game mode variants <br/>
 
 ### **Built With:**
 
 JQuery: https://jquery.com/ <br/>
-Bootstrap: https://getbootstrap.com/
+Bootstrap: https://getbootstrap.com/<br/>
+background image: https://unsplash.com/@thehmstravels
 
 ### **Author(s):**
 

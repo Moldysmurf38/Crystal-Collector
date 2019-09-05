@@ -1,19 +1,22 @@
 body {
-    background-color: black;
+    background-image: url("../Images/cave_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     font-family: 'MedievalSharp', cursive;
     font-weight: bold;
 }
 
 h1 {
     font-size: 60px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Uncial Antiqua', cursive;
     background-image: url("../Images/wood_texture.jpg");
 }
 
 .container {
-    margin-top: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, .6);
     border-radius: 5px;
     font-size: 20px;
     padding: 20px;
@@ -25,16 +28,17 @@ h1 {
 
 #target-field {
     text-align: center;
-    background-image: url("../Images/number_texture.jpg");
+    color: rgb(255, 255, 255);
+    background-image: url("../Images/rock_texture2.jpg");
     border-radius: 5px;
     font-size: 30px;
 }
 
 #total-field {
     text-align: center;
-    background-image: url("../Images/space_texture.jpg");
+    background-image: url("../Images/rock_texture1.jpg");
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
 }
 
@@ -49,7 +53,7 @@ h1 {
 h2 {
     text-align: center;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     background-image: url("../Images/wood_texture.jpg");
     border-radius: 5px;
 }
@@ -60,8 +64,8 @@ img {
 }
 
 #score-field {
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 5px;
 }
