@@ -69,3 +69,10 @@ img {
     text-align: center;
     border-radius: 5px;
 }
+.card-header {
+    background: rgb(46, 46, 46);
+}
+.card-body {
+    color: rgb(255, 255, 255);
+    background: rgb(46, 46, 46);
+}
